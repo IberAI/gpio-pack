@@ -1,0 +1,26 @@
+# Ignore directories for builds
+build/
+dist/
+
+# Ignore Python egg-info directories
+*.egg-info/
+
+# Ignore CMake files for kernel modules
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+fd_blink
+# Optionally ignore the output binaries and modules
+*.ko
+*.mod.*
+*.o
+*.so
+
+# Ignore other files that may be generated
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+
