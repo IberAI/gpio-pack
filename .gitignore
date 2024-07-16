@@ -9,7 +9,7 @@ dist/
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
-Makefile
+
 
 fd_blink
 # Optionally ignore the output binaries and modules
