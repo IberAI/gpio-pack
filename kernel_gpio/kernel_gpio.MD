@@ -5,6 +5,45 @@
 
 This GPIO driver provides an interface between the Linux kernel and the GPIO pins on a Raspberry Pi. It enables users to control GPIO pins through a simple file interface found in `/proc/ibr-gpio`. The driver is designed for flexibility and ease of use in both development and educational contexts.
 
+Sure! Here is an improved version of the instructions:
+
+## Install, Build, and Test
+
+### Step 1: Install Kernel Headers and Essential Tools
+First, install the necessary kernel headers and build tools:
+```sh
+sudo apt-get install raspberrypi-kernel-headers
+sudo apt-get install build-essential
+```
+
+### Step 2: Build the Kernel Module
+Compile the kernel module from the source code:
+```sh
+make
+```
+
+### Step 3: Install the Kernel Module
+Load the compiled module into the kernel:
+```sh
+sudo make install
+```
+
+### Step 4: Verify the Module Installation
+Check if the module is loaded successfully:
+```sh
+lsmod | grep gpio_driver
+```
+
+### Step 5: Run the Test Script
+Execute the test script to control GPIO pin 18:
+```sh
+chmod +x test.sh
+sudo ./test.sh
+```
+
+These instructions guide you through installing the necessary headers and tools, building the kernel module, installing it, verifying the installation, and running a test script to ensure functionality.
+
+
 ## How It Works
 
 ### Memory Mapping
